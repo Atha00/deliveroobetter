@@ -1,0 +1,8 @@
+.itemsBody {
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 2;
+}
+.sectionLabel {
+  margin: 15px;
+}

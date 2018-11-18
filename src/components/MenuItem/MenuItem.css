@@ -1,0 +1,31 @@
+.itemCase {
+  display: flex;
+  background-color: white;
+  width: 33%;
+  margin: 15px;
+  padding: 15px;
+  height: 120px;
+  justify-content: space-between;
+}
+
+.itemImage > img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.itemDescription {
+  font-size: 11px;
+}
+.itemLabel {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.itemPrice {
+  font-size: 12px;
+}
+.itemPop {
+  font-size: 12px;
+}

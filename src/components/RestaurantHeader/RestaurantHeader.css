@@ -1,0 +1,21 @@
+.fixWhite {
+  background-color: white;
+}
+.restaurantHeaderItem {
+  display: flex;
+  width: 1024px;
+  margin: auto;
+}
+.restaurantHeaderText {
+  margin-left: 15px;
+}
+.restaurantHeaderImage {
+  margin-right: 15px;
+  padding: 10px;
+}
+.imageRestaurant {
+  width: 370px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
