@@ -23,11 +23,20 @@ class MenuItem extends React.Component {
         ? this.props.description.substring(0, 150) + "..."
         : this.props.description;
     return (
-      <div className="itemCase">
+      <div
+        className="itemCase"
+        onClick={() => {
+          this.props.addItems(
+            this.props.id,
+            this.props.label,
+            this.props.price
+          );
+        }}
+      >
         <div>
           <h4 className="itemLabel">{this.props.label}</h4>
           <p className="itemDescription">{caseDescription}</p>
-          <span className="itemPrice">{this.props.price}</span>
+          <span className="itemPrice">{this.props.price + " €"}</span>
           {this.renderPopular(this.props.popular)}
         </div>
         <div className="itemImage">{this.renderImage(this.props.imageURL)}</div>

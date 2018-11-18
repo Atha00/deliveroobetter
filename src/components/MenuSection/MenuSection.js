@@ -8,9 +8,11 @@ class MenuSection extends React.Component {
     for (let i = 0; i < this.props.menuItems.length; i++) {
       menuItems.push(
         <MenuItem
+          id={this.props.menuItems[i].id}
+          addItems={this.props.addItems}
           label={this.props.menuItems[i].title}
           description={this.props.menuItems[i].description}
-          price={this.props.menuItems[i].price + " €"}
+          price={this.props.menuItems[i].price}
           imageURL={this.props.menuItems[i].picture}
           popular={this.props.menuItems[i].popular}
         />
