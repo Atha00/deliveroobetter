@@ -5,7 +5,7 @@ import "./Header.css";
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div className="header">
         <img className="logoHeader" alt="logo" src={DeliverooLogo} />
         <hr color="lightgrey" />
       </div>

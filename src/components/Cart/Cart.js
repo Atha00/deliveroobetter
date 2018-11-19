@@ -67,7 +67,14 @@ class About extends React.Component {
     return (
       <div className="cartCase">
         <div>
-          <Link to="/checkout">
+          <Link
+            to={{
+              pathname: "/checkout",
+              total: total,
+              submittedCart: this.props.cart
+            }} // le tableau des produits
+            // transmettre des variables
+          >
             <button className="buttonValid">Valider mon panier</button>
           </Link>
         </div>

@@ -5,7 +5,7 @@ import "./MenuItem.css";
 class MenuItem extends React.Component {
   renderImage(url) {
     if (url) {
-      return <img src={this.props.imageURL} alt="image" />;
+      return <img src={this.props.imageURL} alt="screen" />;
     } else {
       return <img src={Couverts} alt="couverts" />;
     }
