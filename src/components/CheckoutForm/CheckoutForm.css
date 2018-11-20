@@ -1,0 +1,8 @@
+.bodyCheckout {
+  width: 60%;
+  margin: 15px;
+  background-color: white;
+}
+.bodyCheckout > h3 {
+  text-align: center;
+}
