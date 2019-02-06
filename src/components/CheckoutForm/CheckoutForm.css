@@ -6,3 +6,12 @@
 .bodyCheckout > h3 {
   text-align: center;
 }
+.checkout-line {
+  display: flex;
+}
+.line-component {
+  width: 50%;
+}
+.component {
+  width: 100%;
+}

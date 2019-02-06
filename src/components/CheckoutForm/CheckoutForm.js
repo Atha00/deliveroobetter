@@ -54,39 +54,50 @@ class CheckoutForm extends Component {
         <h3>Adresse de livraison</h3>
         <form className="checkout-form" onSubmit={this.handleSubmit}>
           <div style={{ width: "100%" }}>
-            <div>
-              <label>Etage et numéro d'appartement</label>
-              <br />
-              <input
-                type="text"
-                placeholder="ex:Appartement n°15"
-                onChange={event => {
-                  this.props.onChange(event, "stageNumber");
-                }}
-                // value={this.state.stageNumber}
-              />
-              <br />
-              <label>Digicode</label>
-              <br />
-              <input
-                type="text"
-                placeholder="ex:B123"
-                onChange={event => this.props.onChange(event, "digit")}
-                // value={this.state.digit}
-              />
-              <br />
+            <div className="checkout-line">
+              <div className="line-component">
+                <label className="component">
+                  Etage et numéro d'appartement
+                </label>
+                <br />
+                <input
+                  className="component"
+                  type="text"
+                  placeholder="ex:Appartement n°15"
+                  onChange={event => {
+                    this.props.onChange(event, "stageNumber");
+                  }}
+                  // value={this.state.stageNumber}
+                />
+              </div>
+              <div className="line-component">
+                <label className="component">Digicode</label>
+                <br />
+                <input
+                  className="component"
+                  type="text"
+                  placeholder="ex:B123"
+                  onChange={event => this.props.onChange(event, "digit")}
+                  // value={this.state.digit}
+                />
+                <br />
+              </div>
             </div>
+
             <div>
-              <label>Adresse</label>
+              <label className="component">Adresse</label>
               <br />
               <input
+                className="component"
                 type="text"
                 placeholder="ex:100 Rue de Rivoli"
                 onChange={event => this.props.onChange(event, "address")}
                 // value={this.state.address}
               />
               <br />
-              <p>Inclut le nom de votre rue et le numéro de votre bâtiment</p>
+              <p className="component">
+                Inclut le nom de votre rue et le numéro de votre bâtiment
+              </p>
             </div>
             <div>
               <label>Code postal</label>
